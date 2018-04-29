@@ -1,0 +1,42 @@
+<p>
+  account works!
+</p>
+<div>
+  <div class="row">
+  	<div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>房源</label>
+    <select class="form-control">
+      <option *ngFor="let item of names">{{item}}</option>
+    </select>
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>来源</label>
+    <select class="form-control">
+      <option *ngFor="let item of platforms">{{item}}</option>
+    </select>
+  </div>
+  </div>
+  <div class="row">
+  	<div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>订单日期</label>
+    <input type="text" placeholder="Datepicker" class="form-control" placement="bottom" bsDatepicker>
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>起止日期</label>
+    <input type="text" placeholder="Daterangepicker" class="form-control" placement="bottom" bsDaterangepicker>
+  </div>
+  </div>
+  <div class="row">
+  	<div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>收益</label>
+    <input type="number" class="form-control" [(ngModel)]="income" />
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 form-group">
+    <label>负责人</label>
+    <select class="form-control">
+      <option *ngFor="let item of persons">{{item}}</option>
+    </select>
+  </div>
+  </div>
+  
+</div>
